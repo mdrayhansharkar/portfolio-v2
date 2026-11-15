@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Md Rayhan Sharkar – Data Analytics &amp; BI</title>
+  <meta name="description" content="Portfolio of Md Rayhan Sharkar, Information Engineering student at HAW Hamburg. Data analytics and business intelligence, growing into data engineering.">
+  <meta name="theme-color" content="#eef2f6">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Set theme before paint to avoid a flash
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+</head>
+<body>
+  <div id="progress" aria-hidden="true"></div>
+
+  <header class="top">
+    <a class="brand" href="#top">Rayhan Sharkar</a>
+    <nav aria-label="Main">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button id="theme" type="button" aria-label="Switch to dark mode">Dark</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="kicker">Information Engineering student, Hamburg</p>
+        <h1>I turn messy data into dashboards people can act on.</h1>
+        <p class="lead">Data analytics and business intelligence today, growing into data engineering. I study at HAW Hamburg and build projects in SQL, Excel and Python.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">See my projects</a>
+          <a class="btn" href="Md_Rayhan_Sharkar_CV.pdf" target="_blank" rel="noopener">Open CV (PDF)</a>
+        </div>
+      </div>
+      <figure class="portrait">
+        <img src="profile.jpg" alt="Portrait of Md Rayhan Sharkar" width="480" height="600">
+      </figure>
+    </section>
+
+    <section id="projects" class="block">
+      <h2>Projects</h2>
+      <div class="filters" role="group" aria-label="Filter projects by tool">
+        <button type="button" class="chip on" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="chip" data-filter="sql" aria-pressed="false">SQL</button>
+        <button type="button" class="chip" data-filter="excel" aria-pressed="false">Excel</button>
+        <button type="button" class="chip" data-filter="python" aria-pressed="false">Python</button>
+        <button type="button" class="chip" data-filter="dashboard" aria-pressed="false">Dashboards</button>
+      </div>
+
+      <ul class="projects" id="project-list">
+        <!-- EDIT: replace each description with what you actually did, and add your GitHub link -->
+        <li class="project" data-tags="dashboard">
+          <h3>Outreach Analytics Dashboard</h3>
+          <p class="meta">Excelerate</p>
+          <p>A dashboard that tracks outreach activity and results in one view.</p>
+          <a href="https://github.com/mdrayhansharkar" target="_blank" rel="noopener">View on GitHub</a>
+        </li>
+        <li class="project" data-tags="sql">
+          <h3>SQL Product Sales Analysis</h3>
+          <p class="meta">SQL</p>
+          <p>Queries that show which products sell best and how sales change over time.</p>
+          <a href="https://github.com/mdrayhansharkar" target="_blank" rel="noopener">View on GitHub</a>
+        </li>
+        <li class="project" data-tags="excel dashboard">
+          <h3>Excel Sales Performance Dashboard</h3>
+          <p class="meta">Excel</p>
+          <p>An interactive workbook that summarises sales performance with charts and filters.</p>
+          <a href="https://github.com/mdrayhansharkar" target="_blank" rel="noopener">View on GitHub</a>
+        </li>
+        <li class="project" data-tags="python">
+          <h3>Titanic EDA</h3>
+          <p class="meta">Python</p>
+          <p>Exploratory analysis of the Titanic dataset: cleaning, patterns and survival factors.</p>
+          <a href="https://github.com/mdrayhansharkar" target="_blank" rel="noopener">View on GitHub</a>
+        </li>
+        <li class="project" data-tags="sql">
+          <h3>SQL Country Database Lab</h3>
+          <p class="meta">SQL</p>
+          <p>Hands-on database work: designing tables and querying country data.</p>
+          <a href="https://github.com/mdrayhansharkar" target="_blank" rel="noopener">View on GitHub</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="about" class="block narrow">
+      <h2>About</h2>
+      <p>I'm Rayhan, from a small village in Dinajpur, Bangladesh, and now based in Hamburg. I study Information Engineering at HAW Hamburg and expect to graduate in September 2028.</p>
+      <p>I'm looking for a working student role and a semester-5 internship in data analytics, BI or data engineering.</p>
+      <h3>Tools</h3>
+      <ul class="tools">
+        <li>SQL</li><li>Excel</li><li>Python</li><li>Dashboards</li><li>Git &amp; GitHub</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="block narrow">
+      <h2>Contact</h2>
+      <p>The best way to reach me is email or LinkedIn.</p>
+      <div class="actions">
+        <!-- EDIT: put your real email in both places below -->
+        <a class="btn primary" href="mailto:your-email@example.com">Send an email</a>
+        <button class="btn" type="button" id="copy" data-email="your-email@example.com">Copy email address</button>
+        <a class="btn" href="https://github.com/mdrayhansharkar" target="_blank" rel="noopener">GitHub</a>
+        <!-- EDIT: add your LinkedIn URL -->
+        <a class="btn" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year">2026</span> Md Rayhan Sharkar</footer>
+  <div id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
